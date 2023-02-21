@@ -12,7 +12,7 @@ class Main
         // Inisialisasi scanner.
         Scanner sc = new Scanner(System.in);
 
-        int fungsi = 0, i;
+        int fungsi = 0, i,j,k,l;
         String nama, prodi, fakultas, nim, nim_ubah;
 
         do 
