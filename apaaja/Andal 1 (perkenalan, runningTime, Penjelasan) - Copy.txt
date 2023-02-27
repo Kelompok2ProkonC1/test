@@ -1,0 +1,147 @@
+=== Pendahuluan Analisis Desain Algoritma ===
+
+    o Penjelasan
+        Menganalisis dan merancang desain algoritma untuk menjawab permasalahan
+        pemograman. terdapat dua unsur: Correctness (benar) dan complexity (efisien).
+        Benar dalam artian sesuai dengan tujuannya. Efisien dalam artian tepat dalam 
+        pencapaian dan juga tepat dalam penggunaan sumber daya (cost).
+
+        Analisis dalam Analisis Desain Algoritma (andal) adalah. Kegiatan analisis
+        dilakukan setelah merancanng, seperti pada karya ilmiah.
+        Sebuah algoritma akan menggunakan dua sumber daya: waktu dan memori. Namun,
+        Menurut hukum Mor, memori akan terus mendouble sehingga akan relatif cepat murah.
+        Memori itu penting dipertimbangan, tetapi bukan prioritas utama.
+
+    o Menyampaikan hasil analisis
+        Menggunakan notasi asimptotik.
+    
+--- strategi algoritma ---
+
+    o Brute Force
+        Menconba setiap kemungkinan solusi satu per satu.
+        Digunakan dalam analisis sebagai baseline: basis perbandingan.
+
+    o Backtracking
+        perbaikan dari DFS dan BFS
+
+    o Branch and Bound
+    
+    o Greedy
+        Take what you can get right now.
+
+    o Divide and Conquer
+        Membagi dan menaklukkan / menguasai. Membagi masalah yang besar menjadi beberapa
+        bagian yang konsisten. Lalu, selesaikan setiap masalah. Bila belum bisa diselesaikan,
+        bagi lagi masalah tersebut.
+
+--- dynamic programming ---
+
+    Melakukan brute force dnegan cara yang hati-hati.
+    Bila sudah menyelesaikan sebuah masalah yang kecil,
+    akan menyimpan solusinya sehingga bila menemukan masalah
+    yang sama, akan menggunakan solusi yang disimpan tersebut.
+    Penyimpanan solusi disebut sebagai proses memorization.
+
+    Intinya, program mengingat komputasi agar tidak mengulang.
+
+--- Pengelompokkan masalah ---
+
+    o Polynomial problem
+        Algoritma efisien yang mencari solusi. Bila mencari cara gampang,
+        maka mengecek kunci jawaban akan gampang juga.
+
+    o Non-deterministic polynomial problem
+        Algoritma efisien untuk mengecek kunci jawaban. Bila mengecek
+        kunci jawaban gampang, belum tentu mencari caranya gampang.
+
+    o NP complete
+        Berstatus unknown: Belum ada algoritma yang efisien dan belum 
+        ada bukti bahwa tidak ada algoritma yang efisien.
+
+--- Running Time (waktu eksekusi) ---
+
+    o Penjelasan
+        Merupakan suatu fungsi yang menyatakan waktu eksekusi. Adapun berupa fungsi
+        karena data input jumplahnya dapat berupa-rupa.
+        Disimbolkan dengan T(n) atau f(n), dimana n adalah jumlah data.
+        Adapun ukuran waktu menggunakan satuan waktu sebab kecepatan
+        pemrosesan komputer dapat berbeda-beda.
+
+    o Menentukkan Running Time
+        Benchmarking: Kodingan harus sudah siap. Dites dengan cara mengukur
+                      waktu yang dibutuhkan untuk memproses n jumlah data.
+        Analisis    : Menghitung jumlah primitive programnya.
+
+    o Primitive prosess
+        Bila ada satu proimitive process, cost dihitung satu.
+        - Operasi aritmatika
+        - Operasi logika
+        - Operasi perbandingan
+        - Operasi pengaksesan struktur data (mengakses elemen array, etc)
+        - Operasi assignment / memberi nilai kepada suatu variable.
+        - Fungsi library sederhana (bawaan dari bahasa pemogramannya)
+        - Ekspresi jumping (break, continue, go to, return, etc)
+    
+    o Blok Program
+        Harus dipecah terlebih dahulu
+
+    o Looping
+        Looping dalam algoritma akan diperhatikan terlebih
+        dahulu karean akan mencerminkan T(n)-nya. Adapun looping yang
+        diperhatikan adalah looping yang bergntung pada jumlah data input.
+
+--- Teori Analisis Algoritma ---
+
+    o Penjelasan algoritma
+        Alat yang berupa urutan langkah / prosedur komputasi yang terdefinisi secara jelas
+        untuk menyelesaikan suatu masalah yang mengambil masukkan dan mengeluarkan output. 
+        Adapun prosedur, masalah, input, dan output harus jelas terdefinisikan / dijelaskan
+        - Well-defined procedure
+        - Computational
+        - input
+        - Output
+    
+    o Tujuan pembelajaran Analisis Algoritma
+        Mempelajari teknik menganalisis algoritma apakah algoritma tersebut
+        mengeluarkan output yang benar dan efisien.
+
+    o Correctness (Benar)
+        - Definisi           : Algoritma dikatakan benar bila untuk setiap input akan 
+                               mengeluarkan output yang sesuai dengan harapan ketika
+                               berhenti sebab batasan waktu.
+        - Real Time System   : Berhenti atas batasan waktu.
+        - Incorrect algorithm: Algoritma yang ketika berhenti pada masukkan input tertentu, mengeluarkan output yang salah
+                               atau bahkan tidak berhenti sama sekali. Dapat berguna bila
+                               tingkat error dapat dikendalikan.
+    
+    o Representasi Algoritma
+        - Natural language / bahasa
+        - Pseudocode
+        - Kodingan
+        - Desain perangkat lunak (Gerbang logika, etc)
+        - diagram (Flowchart, UML)
+        - Notasi matematika
+
+--- catatan ---
+
+    o RPL (dan sebenranya semua hal)
+        Analisis     : mengumpulkan kebutuhan
+        Desain       : Merancang sesuatu
+        Implementasi : Menerapkan hasil rancangan
+        Testing      : Menguji hasil implementasi
+        Deployment   : Mengantarkan produk ke client.
+
+    o SPADA
+        NP-Complete.
+
+    o nilai motivasi / partisipasi
+        Secara default sudah dapat. Namun, dapat dikurangi.
+
+    o Kecepatan pemrosesan
+        2GHz = 2Giga Hz = 2 * 10^9 Hz = (2 * 10^9) / 1 second.
+
+    o Worksheet 1
+        Kumpulkan minggu depan. Kerjakan di worksheet-nya langsung. Bila tidak cukup,
+        boleh kerjakan di kertas lain dan satukan dengan worksheet
+
+=================================
